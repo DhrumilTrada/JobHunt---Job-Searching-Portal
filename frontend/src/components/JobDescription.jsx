@@ -68,7 +68,7 @@ const JobDescription = () => {
   console.log(singleJob);
 
   return (
-    <>
+    user ? <>
       <Navbar />
       <div className="max-w-7xl mx-auto my-10">
         <div className="flex items-center justify-between">
@@ -156,7 +156,7 @@ const JobDescription = () => {
           </h1>
         </div>
       </div>
-    </>
+    </> : toast.error("Please sign in to view....")
   );
 };
 
