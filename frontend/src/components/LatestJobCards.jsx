@@ -2,7 +2,6 @@
 import React from 'react'
 import { Badge } from './ui/badge'
 import { useNavigate } from 'react-router-dom'
-import useGetAllJobs from '@/hooks/useGetAllJobs';
 
 const LatestJobCards = ({job}) => {
     const navigate = useNavigate();

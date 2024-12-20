@@ -3,14 +3,10 @@ import CategoryCarousel from "./CategoryCarousel"
 import HeroSection from "./HeroSection"
 import LatestJobs from "./LatestJobs"
 import Footer from "./shared/Footer"
-import Navbar from "./shared/Navbar"
-import { useEffect } from "react"
-
+import Navbar from "./shared/Navbar";
 
 function Home() {
-  useEffect(() => {
-    useGetAllJobs()
-  }, [])
+  useGetAllJobs();
 
   return (
     <>
@@ -20,7 +16,7 @@ function Home() {
       <LatestJobs />
       <Footer />
     </>
-  )
+  );
 }
 
 export default Home

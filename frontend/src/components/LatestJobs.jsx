@@ -1,7 +1,6 @@
 import React from 'react'
 import LatestJobCards from './LatestJobCards';
 import { useSelector } from 'react-redux'; 
-import useGetAllJobs from '@/hooks/useGetAllJobs';
 
 const LatestJobs = () => {
     const { allJobs } = useSelector(store=>store.job);
