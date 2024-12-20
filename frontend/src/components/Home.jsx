@@ -4,10 +4,13 @@ import HeroSection from "./HeroSection"
 import LatestJobs from "./LatestJobs"
 import Footer from "./shared/Footer"
 import Navbar from "./shared/Navbar"
+import { useEffect } from "react"
 
 
 function Home() {
-  useGetAllJobs()
+  useEffect(() => {
+    useGetAllJobs()
+  }, [])
 
   return (
     <>
